@@ -1,10 +1,12 @@
+import logo from '../assets/logo.png';
+
 const Footer = () => {
   return (
     <footer className="bg-red-600 text-white py-6 mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center">
         <div className="flex items-center space-x-2">
-          <img src="/bsac-logo.png" alt="BSAC Logo" className="h-8 w-8" />
-          <span className="font-bold text-lg">Blood Share & Care</span>
+         
+          <span className="font-bold text-lg"><img className='h-11 w-auto md:h-10 border-xl' src={logo} alt="" /></span>
         </div>
         <div className="flex space-x-4 mt-4 sm:mt-0">
           <a href="/" className="hover:underline">Home</a>
