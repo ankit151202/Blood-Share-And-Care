@@ -1,14 +1,12 @@
-// src/pages/Home.jsx
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import heroImage from '../assets/logo.png'; // Add a suitable hero image in /assets
+import heroImage from '../assets/logo.png'; 
 
 const Home = () => {
   return (
     <section className="min-h-screen bg-white text-gray-800 flex flex-col justify-center items-center px-4 md:px-10 py-16">
-      {/* Hero Section */}
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Text Content */}
         <div>
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-red-600">
             Blood Share & Care
@@ -16,8 +14,7 @@ const Home = () => {
           <p className="text-lg md:text-xl text-gray-700 mb-8">
             Join our life-saving community. Whether you're looking for blood or want to become a donor, we're here to connect and care. One donation can save three lives.
           </p>
-
-          <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4">
             <Link
               to="/donors"
               className="px-6 py-3 bg-red-600 text-white rounded-full font-medium shadow hover:bg-red-700 transition"
@@ -32,8 +29,6 @@ const Home = () => {
             </Link>
           </div>
         </div>
-
-        {/* Image */}
         <div className="flex justify-center">
           <img
             src={heroImage}
