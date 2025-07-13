@@ -4,7 +4,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-//import DonorCard from './components/DonorCard';
+import DonorCard from './components/DonorCard';
  //import DonorForm from './components/DonorForm';
 // import SearchBar from './components/SearchBar';
 import Home from './pages/HomePage';
@@ -17,6 +17,7 @@ const App = () => {
     <>
       <Navbar />
       <Home/>
+      <DonorCard/>
       <Footer/>
      
       
