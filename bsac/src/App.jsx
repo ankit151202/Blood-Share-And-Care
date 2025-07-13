@@ -6,11 +6,11 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import DonorCard from './components/DonorCard';
 import DonorForm from './components/DonorForm';
-// import SearchBar from './components/SearchBar';
+import SearchBar from './components/SearchBar';
 import Home from './pages/HomePage';
 // import FindDonorPage from './pages/FindDonorPage';
 // import RegisterPage from './pages/RegisterPage';
-// import AboutPage from './pages/AboutPage';
+import AboutPage from './pages/AboutPage';
 // import LoginPage from './pages/LoginPage';
 const App = () => {
   return (
@@ -18,6 +18,8 @@ const App = () => {
       <Navbar />
       <Home/>
       <DonorCard/>
+      <DonorForm/>
+      <SearchBar/>
       <Footer/>
      
       
