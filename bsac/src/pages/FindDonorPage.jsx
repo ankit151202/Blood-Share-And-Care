@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import SearchBar from '../components/SearchBar';
+// import SearchBar from '../components/SearchBar';
 import DonorCard from '../components/DonorCard';
 
 const FindDonorPage = () => {
@@ -29,10 +29,12 @@ const FindDonorPage = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10">
+    <>
+    <DonorCard/>
+    <div className="max-w-7xl mx-auto mt-10 px-4 py-10">
       <h1 className="text-3xl font-bold text-red-600 mb-6">Find Blood Donors</h1>
 
-      <SearchBar onSearch={fetchDonors} />
+
 
       {loading ? (
         <p className="text-gray-500 mt-6">Loading donors...</p>
@@ -46,6 +48,7 @@ const FindDonorPage = () => {
         <p className="text-gray-500 mt-6">No matching donors found.</p>
       )}
     </div>
+    </>
   );
 };
 

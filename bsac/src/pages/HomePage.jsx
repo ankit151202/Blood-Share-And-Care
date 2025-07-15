@@ -2,9 +2,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import heroImage from '../assets/logo.png'; 
+import SearchBar from '../components/SearchBar';
 
-const Home = () => {
+const HomePage = () => {
   return (
+    <>
     <section className="min-h-screen bg-white text-gray-800 flex flex-col justify-center items-center px-4 md:px-10 py-16">
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
@@ -24,7 +26,7 @@ const Home = () => {
             <Link
               to="/register"
               className="px-6 py-3 bg-white border-2 border-red-600 text-red-600 rounded-full font-medium hover:bg-red-50 transition"
-            >
+              >
               Become Donor
             </Link>
           </div>
@@ -34,11 +36,15 @@ const Home = () => {
             src={heroImage}
             alt="Blood donation illustration"
             className="max-h-96 w-auto"
-          />
+            />
         </div>
       </div>
     </section>
+    
+            <SearchBar/>
+    
+    </>
   );
 };
 
-export default Home;
+export default HomePage;

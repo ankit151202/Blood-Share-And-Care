@@ -6,12 +6,12 @@ const DonorCard = ({ donor }) => {
   const { fullName, bloodGroup, phone, email, city, state } = donor;
 
   return (
-    <div className="bg-white shadow-lg rounded-xl p-4 border border-gray-200 hover:shadow-xl transition duration-300 w-full max-w-md">
+    <div className="bg-white shadow-lg mt-10 rounded-xl p-4 border border-gray-200 hover:shadow-xl transition duration-300 w-full max-w-md">
       <div className="flex items-center justify-between mb-3">
-        <h2 className="text-xl font-bold text-red-600">{fullName}</h2>
+        <h2 className="text-xl font-bold text-red-600">Ankit</h2>
         <span className="px-3 py-1 text-white bg-red-500 rounded-full text-sm font-semibold">
           {bloodGroup}
-        </span>
+        </span> 
       </div>
       <div className="text-gray-700 text-sm space-y-1">
         <p><strong>Phone:</strong> {phone}</p>
